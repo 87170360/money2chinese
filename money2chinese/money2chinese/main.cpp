@@ -13,9 +13,12 @@ private:
 
 CMoney::operator string()
 {
+	//µ¥Î»
 	char* basestr[15] = { "·Ö", "½Ç", "Ôª", "Ê°", "°Û", "Çª", "Íò",
 		"Ê°", "°Û", "Çª", "ÒÚ","Ê°", "°Û", "Çª", "Íò" };
+	//Êı×Ö
 	char* datastr[10] = { "Áã", "Ò¼", "·¡", "Èş", "ËÁ", "Îé", "Â½", "Æâ", "°Æ", "¾Á" };
+
 	static char strResult[80];
 	double temp, base = 1.0;
 	int n = 0;
@@ -45,7 +48,6 @@ CMoney::operator string()
 			}
 		}
 	}
-
 	return strResult;
 }
 
